@@ -47,6 +47,8 @@ sources_global <- source_list(
 timestamp <- Sys.time()
 time_str <- format(timestamp, "%Y-%m-%d %H:%M %Z", tz = "UTC")
 
+md_desc <- paste(readLines("src/desc.md"), collapse = "\n")
+
 app <- register_app(
   "Global-Covid19",
   path = "docs",
@@ -72,6 +74,7 @@ global_display <- build_casecount_display(
   nrow = 1,
   ncol = 1,
   case_fatality_max = 12,
+  md_desc = md_desc,
   thumb = system.file("thumbs/global/global.png", package = "casecountapp")
 )
 
@@ -92,6 +95,7 @@ continent_display <- build_casecount_display(
   min_date = as.Date("2020-01-01"),
   order = 2,
   case_fatality_max = 12,
+  md_desc = md_desc,
   thumb = system.file("thumbs/global/continents.png", package = "casecountapp")
 )
 
@@ -113,6 +117,7 @@ who_region_display <- build_casecount_display(
   min_date = as.Date("2020-01-01"),
   order = 3,
   case_fatality_max = 12,
+  md_desc = md_desc,
   thumb = system.file("thumbs/global/who_regions.png", package = "casecountapp")
 )
 
@@ -132,5 +137,6 @@ country_display <- build_casecount_display(
   min_date = as.Date("2020-01-01"),
   order = 4,
   case_fatality_max = 12,
+  md_desc = md_desc,
   thumb = system.file("thumbs/global/countries.png", package = "casecountapp")
 )
