@@ -38,7 +38,7 @@ Handling of weekly data on charts showing data by day: Weekly data will be distr
 
 ## ECDC
 
-- **Source**: Pulled from a web API described here: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
+- **Source**: Pulled from opendata.ecdc.europa.eu. URL: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv
 - **Update frequency**: ECDC switched to a weekly reporting schedule for the COVID-19 situation worldwide and in the EU/EEA and the UK on 17 December 2020. Hence, all daily updates have been discontinued from 14 December. ECDC will publish updates on the number of cases and deaths reported worldwide and aggregated by week every Thursday.
 - **Day binning**: Case and death counts are binned into weeks.
 
