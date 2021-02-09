@@ -13,7 +13,8 @@ The numbers reported represent the latest data from each source.
 ## WHO
 
 - **Source**: Direct database connection to data as reported here: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/
-- **Update frequency**: ECDC switched to a weekly reporting schedule for the COVID-19 situation worldwide and in the EU/EEA and the UK on 17 December 2020. Hence, all daily updates have been discontinued from 14 December. ECDC will publish updates on the number of cases and deaths reported worldwide and aggregated by week every Thursday.
+- **Update frequency**: A full time series is provided for each geographic entity and variable. Updates are made to the database between 1 and 20 times a day. Major updates occur about once or twice a day, and typically occur between 14:00 and 16:00 UTC.
+- **Day binning**: What time zone is used to constitute a day for this data is unknown. Due to the fact that the numbers are reported post-binning, we are not able to adjust the time binning.
 
 ## Johns Hopkins CSSE (JHU)
 
@@ -31,8 +32,8 @@ The numbers reported represent the latest data from each source.
 ## ECDC
 
 - **Source**: Pulled from a web API described here: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
-- **Update frequency**: A full time series is provided for each geographic entity and variable. Updates are made to the database once a day between 07:00 and 09:00 UTC.
-- **Day binning**: What time zone is used to constitute a day for this data is unknown. Due to the fact that the numbers are reported post-binning, we are not able to adjust the time binning.
+- **Update frequency**: ECDC switched to a weekly reporting schedule for the COVID-19 situation worldwide and in the EU/EEA and the UK on 17 December 2020. Hence, all daily updates have been discontinued from 14 December. ECDC will publish updates on the number of cases and deaths reported worldwide and aggregated by week every Thursday.
+- **Day binning**: Case and death counts are binned into weeks.
 
 # Available Metrics
 
