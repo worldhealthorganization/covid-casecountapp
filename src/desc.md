@@ -10,6 +10,13 @@ Click the question mark icon in the top right corner of this app for more inform
 
 The numbers reported represent the latest data from each source.
 
+# Update Frequency
+
+WHO, John Hopins and Worldometer providing daily data. ECDC is providing weekly data (since 17 Decemeber 2020, daily data up to 14 December 2020). 
+
+Handling of weekly data on charts showing data by day: Weekly data will be distributed as evenly as possible over the 7 days of the week. On charts showing data by day. 
+
+
 ## WHO
 
 - **Source**: Direct database connection to data as reported here: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/
